@@ -1,0 +1,9 @@
+.navbar {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+
+  &__logo {
+    height: 3.2rem;
+  }
+}

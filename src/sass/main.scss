@@ -4,6 +4,13 @@
 @import "./utils";
 
 @import "../components/Container/Container";
+
 @import "../components/Navbar/Navbar";
+@import "../components/Navbar/SearchBar/SearchBar";
+@import "../components/Navbar/ProfileButton/ProfileButton";
+@import "../components/Navbar/Notificon/NotifIcon";
+
 @import "../components/Sidebar/Sidebar";
+@import "../components/Sidebar/SidebarLink/SidebarLink";
+
 @import "../components/MainContent/MainContent";

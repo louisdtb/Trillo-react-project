@@ -1,0 +1,17 @@
+.sidebar-link {
+  color: #fff;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+  }
+
+  &__icon {
+    fill: #fff;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}

@@ -2,8 +2,6 @@ import { React } from "react";
 import SidebarLink from "./SidebarLink/SidebarLink";
 
 const Sidebar = (props) => {
-  console.log(props);
-
   return (
     <div className="sidebar">
       <ul className="side-nav">
@@ -13,7 +11,6 @@ const Sidebar = (props) => {
           }`}
           onClick={() => {
             props.setPage("hotels");
-            console.log("test");
           }}
         >
           <SidebarLink icon="home" text="Hotel" />

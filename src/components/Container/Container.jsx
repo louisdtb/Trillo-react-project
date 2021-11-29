@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import MainContent from "../MainContent/MainContent";
 
 const Container = () => {
-  const [mainContent, setMainContent] = useState("hotel");
+  const [mainContent, setMainContent] = useState("welcome");
 
   const setPageHandler = (e) => {
     setMainContent(e);
@@ -12,7 +12,7 @@ const Container = () => {
 
   return (
     <div className="container">
-      <Navbar activePage={mainContent} />
+      <Navbar setPage={setPageHandler} activePage={mainContent} />
       <div className="u-flexbox">
         <Sidebar setPage={setPageHandler} activePage={mainContent} />
         <MainContent activePage={mainContent} />

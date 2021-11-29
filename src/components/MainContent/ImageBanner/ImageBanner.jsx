@@ -3,7 +3,11 @@ import ImageOne from "../../../img/hotel-1.jpg";
 import ImageTwo from "../../../img/hotel-2.jpg";
 import ImageThree from "../../../img/hotel-3.jpg";
 
-const ImageBanner = () => {
+const ImageBanner = (props) => {
+  const hotelsData = props.hotelsData;
+
+  console.log(hotelsData[0].photoOne);
+
   return (
     <div className="image-banner">
       <figure className="image-banner__item">

@@ -6,11 +6,13 @@ import ProfileButton from "./ProfileButton/ProfileButton";
 const Navbar = (props) => {
   return (
     <div className="navbar">
-      <img
-        src={require("../../img/logo.png").default}
-        alt="Trillo logo"
-        class="navbar__logo"
-      />
+      <a href="#" onClick={() => props.setPage("welcome")}>
+        <img
+          src={require("../../img/logo.png").default}
+          alt="Trillo logo"
+          class="navbar__logo"
+        />
+      </a>
       <SearchBar activePage={props.activePage} />
       <div className="user-nav">
         <div className="user-nav__icon-box">

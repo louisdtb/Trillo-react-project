@@ -1,0 +1,20 @@
+// h1,
+// h2,
+// h3,
+// h4 {
+//   display: inline-block;
+//   font-size: inherit;
+//   margin-block-start: inherit;
+//   margin-block-end: inherit;
+//   margin-inline-start: inherit;
+//   margin-inline-end: inherit;
+//   font-weight: inherit;
+// }
+
+.heading-primary {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}

@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./mixins";
 @import "./utils";
+@import "./typography";
 
 @import "../components/Container/Container";
 
@@ -16,3 +17,8 @@
 @import "../components/MainContent/MainContent";
 @import "../components/MainContent/ImageBanner/ImageBanner";
 @import "../components/MainContent/ComingSoon/ComingSoon";
+@import "../components/MainContent/Welcome/Welcome";
+@import "../components/MainContent/TitleBar/TitleBar";
+@import "../components/MainContent/TitleBar/Stars/Stars";
+@import "../components/MainContent/TitleBar/TextLink/TextLink";
+@import "../components/MainContent/TitleBar/ScoreTile/ScoreTile";

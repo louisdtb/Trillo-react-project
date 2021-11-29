@@ -7,7 +7,11 @@ const SearchBar = (props) => {
       <input
         type="text"
         className="searchbar__input"
-        placeholder={`Search ${props.activePage}`}
+        placeholder={
+          props.activePage === "welcome"
+            ? "Search"
+            : `Search ${props.activePage}`
+        }
       />
       <button className="searchbar__button">
         <Search src={Search} alt="search icon" className="searchbar__svg" />

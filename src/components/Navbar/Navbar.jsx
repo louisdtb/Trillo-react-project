@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar/SearchBar";
 import NotifIcon from "./NotifIcon/NotifIcon";
 import ProfileButton from "./ProfileButton/ProfileButton";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="navbar">
       <img
@@ -11,7 +11,7 @@ const Navbar = () => {
         alt="Trillo logo"
         class="navbar__logo"
       />
-      <SearchBar />
+      <SearchBar activePage={props.activePage} />
       <div className="user-nav">
         <div className="user-nav__icon-box">
           <NotifIcon type="bookmark" />

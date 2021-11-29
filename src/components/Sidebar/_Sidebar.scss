@@ -17,7 +17,37 @@
 
 .side-nav {
   list-style: none;
+  font-size: 1.4rem;
+  margin-top: 3.5rem;
 
   &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary);
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+      transition: transform 0.1s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.1s,
+        background-color 0.1s;
+    }
+
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
+    }
   }
 }

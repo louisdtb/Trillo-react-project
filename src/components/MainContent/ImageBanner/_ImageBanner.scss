@@ -1,0 +1,12 @@
+.image-banner {
+  display: flex;
+
+  &__item {
+    width: 33.33333%;
+  }
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}

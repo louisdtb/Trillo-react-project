@@ -1,17 +1,21 @@
 .sidebar-link {
-  color: #fff;
-  text-transform: uppercase;
+  &:link,
+  &:visited {
+    color: var(--color-grey-light-1);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10;
 
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-  &:hover {
+    display: flex;
+    align-items: center;
   }
 
   &__icon {
-    fill: #fff;
+    fill: currentColor;
     height: 1.75rem;
     width: 1.75rem;
+    margin-right: 2rem;
   }
 }

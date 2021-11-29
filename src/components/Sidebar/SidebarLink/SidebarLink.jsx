@@ -7,13 +7,13 @@ import { ReactComponent as Map } from "../../../img/SVG/map.svg";
 const SidebarLink = (props) => {
   return (
     <a href="#" className="sidebar-link">
-      <div className="sidebar-link__icon">
+      <span className="sidebar-link__icon">
         {props.icon === "home" && <Home />}
         {props.icon === "flight" && <Flight />}
         {props.icon === "key" && <Key />}
         {props.icon === "map" && <Map />}
-      </div>
-      {props.text}
+      </span>
+      <span>{props.text}</span>
     </a>
   );
 };

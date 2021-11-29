@@ -1,15 +1,21 @@
-import React from "react";
+import { React, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import MainContent from "../MainContent/MainContent";
 
 const Container = () => {
+  const [mainContent, setMainContent] = useState("hotel");
+
+  const setPageHandler = (e) => {
+    setMainContent(e);
+  };
+
   return (
     <div className="container">
-      <Navbar />
+      <Navbar activePage={mainContent} />
       <div className="u-flexbox">
-        <Sidebar />
-        <MainContent />
+        <Sidebar setPage={setPageHandler} activePage={mainContent} />
+        <MainContent activePage={mainContent} />
       </div>
     </div>
   );

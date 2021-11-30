@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ComingSoon = (props) => {
   return (
-    <div className="coming-soon">
+    <motion.div className="coming-soon">
       Check back soon to book {props.activePage}!
-    </div>
+    </motion.div>
   );
 };
 

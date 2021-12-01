@@ -228,7 +228,8 @@ body {
   flex: 1;
   height: 80rem;
   width: auto;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  overflow: hidden; }
 
 .image-banner {
   display: flex; }
@@ -247,6 +248,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%; }
+
+.transition {
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 100%; }
 
 .title-bar {
   display: flex;

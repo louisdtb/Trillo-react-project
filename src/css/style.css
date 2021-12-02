@@ -247,12 +247,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
+  .welcome-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
 
 .transition {
   background-color: var(--color-primary);
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  z-index: 10; }
 
 .title-bar {
   display: flex;

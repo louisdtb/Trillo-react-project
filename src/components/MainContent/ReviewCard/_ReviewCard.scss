@@ -1,0 +1,63 @@
+.review-card {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+
+  .paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1.5rem;
+  }
+
+  &__user-info {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: var(--color-grey-dark-2);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  &__date {
+    color: var(--color-grey-dark-3);
+  }
+
+  &__score {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    color: var(--color-grey-light-2);
+    font-size: 20rem;
+    top: -2.75rem;
+    left: -1rem;
+    font-family: sans-serif;
+    line-height: 1;
+    z-index: 1;
+  }
+}

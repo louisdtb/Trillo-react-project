@@ -12,5 +12,9 @@
   }
   &__reviews {
     flex: 1;
+
+    & > *:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
   }
 }

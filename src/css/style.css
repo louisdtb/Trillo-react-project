@@ -313,6 +313,55 @@ body {
 
 .hotels__reviews {
   flex: 1; }
+  .hotels__reviews > *:not(:last-child) {
+    margin-bottom: 3.5rem; }
+
+.review-card {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+  position: relative;
+  overflow: hidden; }
+  .review-card .paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative; }
+  .review-card__details {
+    display: flex;
+    align-items: center; }
+  .review-card__photo {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1.5rem; }
+  .review-card__user-info {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto; }
+  .review-card__name {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: var(--color-grey-dark-2);
+    font-weight: 600;
+    margin-bottom: 0.4rem; }
+  .review-card__date {
+    color: var(--color-grey-dark-3); }
+  .review-card__score {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review-card::before {
+    content: "\201C";
+    position: absolute;
+    color: var(--color-grey-light-2);
+    font-size: 20rem;
+    top: -2.75rem;
+    left: -1rem;
+    font-family: sans-serif;
+    line-height: 1;
+    z-index: 1; }
 
 .title-bar {
   display: flex;

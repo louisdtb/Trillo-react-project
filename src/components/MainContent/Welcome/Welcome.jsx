@@ -11,23 +11,23 @@ const Welcome = () => {
   //   }, 1000);
   // }, []);
 
-  const animate = {
-    hidden: { y: "0" },
-    show: {
-      y: "-100%",
-      transition: { duration: 1, ease: [0.85, 0, 0.15, 1] },
-    },
-    exit: { y: "100%" },
-  };
+  // const animate = {
+  //   hidden: { y: "0" },
+  //   show: {
+  //     y: "-100%",
+  //     transition: { duration: 1, ease: [0.85, 0, 0.15, 1] },
+  //   },
+  //   exit: { y: "100%" },
+  // };
 
   return (
     <div className="welcome-wrapper">
       <motion.div
-        className="transition"
-        exit="hidden"
-        animate="show"
-        initial="exit"
-        variants={animate}
+        // className="transition"
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        // variants={animate}
       />
       <div className="welcome">Welcome to Trillo!</div>
     </div>

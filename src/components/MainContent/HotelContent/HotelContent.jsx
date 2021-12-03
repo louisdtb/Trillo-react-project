@@ -16,8 +16,14 @@ const HotelContent = () => {
     >
       <ImageBanner hotelsData={HotelsData} />
       <TitleBar hotelsData={HotelsData} />
-      <SectionDescription hotelsData={HotelsData} />
-      <Reviews hotelsData={HotelsData} />
+      <div className="hotels__body">
+        <div className="hotels__description">
+          <SectionDescription hotelsData={HotelsData} />
+        </div>
+        <div className="hotels__reviews">
+          <Reviews hotelsData={HotelsData} />
+        </div>
+      </div>
       <BookingBar hotelsData={HotelsData} />
     </motion.div>
   );

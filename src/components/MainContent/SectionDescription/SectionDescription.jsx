@@ -1,8 +1,8 @@
 import React from "react";
-import FriendOne from "../../../img/user-1.jpg";
-import FriendTwo from "../../../img/user-2.jpg";
-import FriendThree from "../../../img/user-3.jpg";
-import FriendFour from "../../../img/user-4.jpg";
+import FriendOne from "../../../img/user-3.jpg";
+import FriendTwo from "../../../img/user-4.jpg";
+import FriendThree from "../../../img/user-5.jpg";
+import FriendFour from "../../../img/user-6.jpg";
 
 const SectionDescription = () => {
   return (

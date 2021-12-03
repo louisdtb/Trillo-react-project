@@ -261,10 +261,45 @@ body {
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem; }
-
-.reviews__photo {
-  border-radius: 50%;
-  mask-clip: 50%; }
+  .section-description .paragraph:not(:last-of-type) {
+    margin-bottom: 2rem; }
+  .section-description .list {
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    display: flex;
+    flex-wrap: wrap; }
+    .section-description .list-item {
+      flex: 0 0 50%;
+      margin-bottom: 0.7rem; }
+      .section-description .list-item::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.7rem;
+        background-color: var(--color-primary);
+        -webkit-mask-image: url("/src/img/chevron-thin-right.svg");
+        mask-image: url("/src/img/chevron-thin-right.svg");
+        -webkit-mask-size: cover;
+        mask-size: cover; }
+  .section-description .recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+    display: flex;
+    align-items: center; }
+    .section-description .recommend__count {
+      margin-right: auto; }
+    .section-description .recommend__photo {
+      box-sizing: content-box;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      border: 3px solid #fff; }
+      .section-description .recommend__photo:not(:last-child) {
+        margin-right: -1.5rem; }
 
 .hotels__body {
   display: flex;

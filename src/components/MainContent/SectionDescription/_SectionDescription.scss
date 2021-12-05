@@ -3,6 +3,11 @@
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem;
+  height: 100%;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem;
+  }
 
   .paragraph:not(:last-of-type) {
     margin-bottom: 2rem;
@@ -18,6 +23,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media only screen and (max-width: 46em) {
+      padding: 1.5rem;
+    }
+
     &-item {
       flex: 0 0 50%;
       margin-bottom: 0.7rem;
@@ -32,11 +41,14 @@
         // background-image: url("/src/img/chevron-thin-right.svg");
         // background-size: cover;
 
-        background-color: var(--color-primary);
-        -webkit-mask-image: url("/src/img/chevron-thin-right.svg");
-        mask-image: url("/src/img/chevron-thin-right.svg");
-        -webkit-mask-size: cover;
-        mask-size: cover;
+        @supports (mask-image: url()) or (-webkit-mask-image: url()) {
+          background-color: var(--color-primary);
+          -webkit-mask-image: url("/src/img/chevron-thin-right.svg");
+          mask-image: url("/src/img/chevron-thin-right.svg");
+          -webkit-mask-size: cover;
+          mask-size: cover;
+          background-image: none;
+        }
       }
     }
   }
@@ -52,6 +64,7 @@
     }
 
     &__friends {
+      display: flex;
     }
 
     &__photo {
@@ -62,7 +75,7 @@
       border: 3px solid #fff;
 
       &:not(:last-child) {
-        margin-right: -1.5rem;
+        margin-right: -2rem;
       }
     }
   }

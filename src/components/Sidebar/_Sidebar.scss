@@ -12,6 +12,10 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-light-4);
+
+    @media only screen and (max-width: 56.25em) {
+      display: none;
+    }
   }
 }
 
@@ -20,11 +24,24 @@
   font-size: 1.4rem;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: 56.25em) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
   &__item {
     position: relative;
 
+    @media only screen and (max-width: 56.25em) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+      @media only screen and (max-width: 56.25em) {
+        margin-bottom: 0;
+      }
     }
 
     &::before {
@@ -38,6 +55,9 @@
       transform: scaleY(0);
       transition: transform 0.1s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.1s,
         background-color 0.1s;
+      @media only screen and (max-width: 56.25em) {
+        width: 100%;
+      }
     }
 
     &:hover::before,

@@ -1,0 +1,14 @@
+.booking-bar {
+  background-color: #fff;
+  border-top: var(--line);
+  padding: 3.5rem 0;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 2.5rem 0;
+  }
+}

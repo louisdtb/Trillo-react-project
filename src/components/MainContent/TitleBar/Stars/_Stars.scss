@@ -6,5 +6,23 @@
     height: 1.75rem;
     width: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: 28.75em) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  &__half {
+    background-image: url(/src/img/SVG/half-star.svg);
+
+    @supports (mask-image: url()) or (-webkit-mask-image: url()) {
+      background-color: var(--color-primary);
+      mask-image: url(/src/img/SVG/half-star.svg);
+      mask-size: cover;
+      -webkit-mask-image: url(/src/img/SVG/half-star.svg);
+      -webkit-mask-size: cover;
+      background-image: none;
+    }
   }
 }

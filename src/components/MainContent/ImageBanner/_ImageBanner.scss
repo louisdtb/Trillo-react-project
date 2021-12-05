@@ -1,5 +1,6 @@
 .image-banner {
   display: flex;
+  overflow: hidden;
 
   &__item {
   }
@@ -7,5 +8,6 @@
   &__photo {
     width: 100%;
     display: block;
+    transition: all 0.2s;
   }
 }

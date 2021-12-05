@@ -13,7 +13,7 @@ const Container = () => {
   return (
     <div className="container">
       <Navbar setPage={setPageHandler} activePage={mainContent} />
-      <div className="u-flexbox">
+      <div className="container__content">
         <Sidebar setPage={setPageHandler} activePage={mainContent} />
         <MainContent activePage={mainContent} />
       </div>

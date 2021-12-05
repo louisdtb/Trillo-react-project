@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     margin-right: 3rem;
+
+    @media only screen and (max-width: 28.75em) {
+      margin-right: 1rem;
+    }
   }
 
   &__location-icon {
@@ -18,5 +22,10 @@
     width: 1.75rem;
     fill: var(--color-primary);
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: 28.75em) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 }

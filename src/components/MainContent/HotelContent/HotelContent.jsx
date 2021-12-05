@@ -24,7 +24,7 @@ const HotelContent = () => {
           <ReviewCard hotelsData={HotelsData} />
           <ReviewCard hotelsData={HotelsData} />
           <a href="#" className="text-link">
-            Test &rarr;
+            Show all<span>&rarr;</span>
           </a>
         </figure>
       </div>

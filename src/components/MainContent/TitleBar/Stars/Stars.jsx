@@ -9,7 +9,7 @@ const Stars = (props) => {
   const stars = Array(Math.floor(score)).fill(<Star className="stars__star" />);
 
   if (score % Math.round(score) > 0.25 && score % Math.round(score) < 0.75) {
-    stars.push(<HalfStar className="stars__star" />);
+    stars.push(<span className="stars__star stars__half"></span>);
   }
   return <div className="stars">{stars}</div>;
 };

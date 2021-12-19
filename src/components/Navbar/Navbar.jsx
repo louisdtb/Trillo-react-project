@@ -9,7 +9,7 @@ const Navbar = (props) => {
     <div className="navbar">
       <Link to="/" onClick={() => props.setPage("welcome")}>
         <img
-          src={require("../../img/logo.png").default}
+          src={require("../../img/logo-1.png").default}
           alt="Trillo logo"
           class="navbar__logo"
         />
@@ -30,8 +30,8 @@ const Navbar = (props) => {
             <div className="dropdown__user">
               <span className="dropdown__photo"></span>
               <div className="dropdown__user-info">
-                <div className="dropdown__name">Jonas Schmedtmann</div>
-                <div className="dropdown__email">jonas@jonas.io</div>
+                <div className="dropdown__name">Louis de Tilly</div>
+                <div className="dropdown__email">louis@tilly.digital</div>
               </div>
             </div>
             <ul className="dropdown__items">

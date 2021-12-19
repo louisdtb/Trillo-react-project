@@ -1,9 +1,14 @@
 .welcome {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   position: relative;
+
+  &__logo {
+    // margin-bottom: 3rem;
+  }
 
   &-wrapper {
     overflow: hidden;

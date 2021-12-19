@@ -41,7 +41,7 @@ const Sidebar = (props) => {
         </li>
       </ul>
       <div className="sidebar__legal">
-        &copy; 2017 by Trillo. All rights reserved.
+        &copy; 2022 by Trillo. All rights reserved.
       </div>
     </div>
   );

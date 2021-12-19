@@ -5,7 +5,7 @@ const ProfileButton = () => {
   return (
     <>
       <img src={User} alt="user" className="profile-button__photo" />
-      <span className="profile-button__user-name">Jonas</span>
+      <span className="profile-button__user-name">Louis</span>
     </>
   );
 };

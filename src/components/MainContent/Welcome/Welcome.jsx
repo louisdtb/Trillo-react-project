@@ -29,7 +29,18 @@ const Welcome = () => {
         initial={{ opacity: 0 }}
         // variants={animate}
       />
-      <div className="welcome">Welcome to Trillo!</div>
+      <div className="welcome">
+        {/* <img
+          src={require("../../../img/logo-1.png").default}
+          alt="Trillo logo"
+          class="welcome__logo"
+        /> */}
+        <div className="heading-primary">Welcome to Trillo</div>
+        <div>
+          A fictional travel app designed by Jonas Schmedtmann and built in
+          React by Louis de Tilly.
+        </div>
+      </div>
     </div>
   );
 };

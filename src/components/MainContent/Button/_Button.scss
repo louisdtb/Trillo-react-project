@@ -6,8 +6,8 @@
   border-radius: 10rem;
   background-image: linear-gradient(
     to right,
-    var(--color-primary-light),
-    var(--color-primary-dark)
+    var(--color-secondary-light),
+    var(--color-secondary-dark)
   );
   color: #fff;
   transition: all 0.2s;
@@ -35,8 +35,8 @@
   &:hover {
     background-image: linear-gradient(
       to right,
-      var(--color-primary-dark),
-      var(--color-primary-light)
+      var(--color-secondary-dark),
+      var(--color-secondary-light)
     );
   }
 

@@ -1,6 +1,8 @@
 # Trillo React Travel App
 
-This project is a demo app that recreates and extends Jonas Schmedtmann's Trillo project with React.
+This project is a practice demo app that recreates and extends Jonas Schmedtmann's Trillo project with React.
+
+[View live page here.](https://trillo.tilly.digital/)
 
 ## Overview
 

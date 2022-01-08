@@ -10,7 +10,7 @@ Jonas Schmedtmann's Trillo page is a static webpage built using HTML and SCSS. I
 
 This project sought to rebuild Jonas' project in React, thus giving it more functionality.
 
-The styling and layout from Jonas' project are kept with modifications:
+The styling and layout from Jonas' project are kept but with modifications:
 
 - Colors and logo are changed from tones of pink to blue and gold
 - Nav items use React Router to display different pages

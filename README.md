@@ -1,6 +1,6 @@
 # Trillo React Travel App
 
-This project is a practice demo app that recreates and extends Jonas Schmedtmann's Trillo project with React.
+This project is a practice demo app that recreates and extends [Jonas Schmedtmann's Trillo project](https://trillo.netlify.app/#) with React.
 
 [View live page here.](https://trillo.tilly.digital/)
 
@@ -12,7 +12,7 @@ This project sought to rebuild Jonas' project in React, thus giving it more func
 
 The styling and layout from Jonas' project are kept with modifications:
 
-- Colors are changed from tones of pink to blue and gold
+- Colors and logo are changed from tones of pink to blue and gold
 - Nav items use React Router to display different pages
 - The user menu item now has a hover dropdown menu
 - UseState is used to display conditional content based on the active page

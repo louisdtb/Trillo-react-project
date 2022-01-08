@@ -2,7 +2,7 @@
 
 This project is a practice demo app that recreates and extends [Jonas Schmedtmann's Trillo project](https://trillo.netlify.app/#) with React.
 
-<a href='https://trillo.tilly.digital' target='_blank'>View live page here.</a>
+<a href='https://trillo.tilly.digital' target="_blank">View live page here.</a>
 
 ## Overview
 

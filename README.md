@@ -1,8 +1,8 @@
 # Trillo React Travel App
 
-This project is a practice demo app that recreates and extends [Jonas Schmedtmann's Trillo project](_https://trillo.netlify.app/#) with React.
+This project is a practice demo app that recreates and extends [Jonas Schmedtmann's Trillo project](https://trillo.netlify.app/#) with React.
 
-[View live page here.](_https://trillo.tilly.digital/)
+<a href='https://trillo.tilly.digital' target='_blank'>View live page here.</a>
 
 ## Overview
 
